@@ -1,12 +1,6 @@
-.venv/
+venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-
-data/raw/*
-data/processed/*
-
-models/*
-!.gitkeep
 
 .env
