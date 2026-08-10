@@ -1,5 +1,5 @@
 import pandas as pd
-
+from pandas.api.types import is_string_dtype
 
 DATASET_PATH = "data/raw/hand_gesture_landmarks/gesture_landmarks.csv"
 
@@ -25,7 +25,7 @@ def main():
 
     print("\nUnique values:")
     for column in df.columns:
-        if df[column].dtype == "object":
+        if is_string_dtype(df[column]):
             print(f"{column}: {df[column].nunique()} unique values")
             print(df[column].value_counts())
 
