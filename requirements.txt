@@ -12,16 +12,32 @@ matplotlib==3.11.1
 mediapipe==1.0.0
 narwhals==2.25.0
 numpy==2.5.1
-opencv-contrib-python==5.0.0.93
-opencv-python==5.0.0.93
 packaging==26.3
 pandas==3.0.5
 pillow==12.3.0
+psutil==7.2.2
+PyAutoGUI==0.9.54
 pycparser==3.0
+PyMsgBox==2.0.1
 pyparsing==3.3.2
+pyperclip==1.11.0
+PyRect==0.2.0
+PyScreeze==1.0.1
+pytweening==1.2.0
 python-dateutil==2.9.0.post0
 scikit-learn==1.9.0
 scipy==1.18.1
 six==1.17.0
 sounddevice==0.5.5
 threadpoolctl==3.6.0
+
+# Linux-only dependencies
+python3-xlib==0.15; sys_platform == "linux"
+
+# Windows-only dependencies
+comtypes==1.4.17; sys_platform == "win32"
+pycaw==20260927; sys_platform == "win32"
+winrt-Windows.Media.Control; sys_platform == "win32"
+
+# Platform-specific OpenCV
+opencv-contrib-python==5.0.0.93
